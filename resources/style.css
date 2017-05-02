@@ -24,56 +24,28 @@ ul.table-of-contents li {
   cursor: pointer;
 }
 
-#preview {
-  position: relative;
+.entry {
+  display: flex;
+  overflow: auto;
+  margin: 5px 0 5px 0;
 }
 
-#preview .preview-entry {
-  position: absolute;
-  display: none;
-  height: 485px;
-}
-
-#preview .preview-entry iframe {
-  display: block;
-  margin: auto;
-}
-
-.shortcuts div.left {
-  float: left;
-  width: 10%;
-}
-
-.shortcuts div.right {
-  float: right;
-  width: 90%;
-}
-
-.debug div.left {
+.entry div.left {
   float: left;
   width: 35%;
+  overflow: hidden;
 }
 
-.debug div.right {
+.entry div.right {
   float: right;
   width: 65%;
 }
 
-.options div.left {
-  float: left;
-  width: 25%;
+.entry img {
+  height: 100%;
+  vertical-align: middle;
 }
 
-.options div.right {
-  float: right;
-  width: 75%;
-}
-
-.debug div {
-  margin: 5px 0 5px 0;
-}
-
-div.bullet-contain {
-  overflow: auto;
-  margin: 5px 0 5px 0;
+.parts-list {
+  padding-left: 15px;
 }
