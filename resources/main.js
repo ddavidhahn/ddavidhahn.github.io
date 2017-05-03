@@ -1,23 +1,12 @@
 ﻿$(document).ready(function() {
-    $('ul.table-of-contents li').click(function () {
-        location.href = $(this).attr('data-goto');
-    })
-
-    $('ul.table-of-contents li').mouseenter(function () {
-        var preview_to_unhide = $(this).attr('data-preview');
-        if (preview_to_unhide != undefined) {
-            $(preview_to_unhide).fadeIn({
-                duration : 200
-            });
+    $('button.more-bio-button').click(function () {
+        var $moreBio = $('div.more-bio');
+        if ($moreBio.is( ":hidden" )) {
+            $moreBio.slideDown();
+            $(this).html('<b>Less <i class="fa fa-arrow-up" aria-hidden="true"></i>');
+        } else {
+            $moreBio.slideUp();
+            $(this).html('<b>More <i class="fa fa-arrow-right" aria-hidden="true"></i></b></button>');
         }
-    })
-
-    $('ul.table-of-contents li').mouseleave(function () {
-        var preview_to_hide = $(this).attr('data-preview');
-        if (preview_to_hide != undefined) {
-            $(preview_to_hide).fadeOut({
-                duration : 200
-            });
-        }
-    })
+    });
 });

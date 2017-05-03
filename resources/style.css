@@ -48,6 +48,26 @@ ul.table-of-contents li {
   height: 100%;
 }
 
+.more-bio {
+  display: none;
+}
+
+.more-bio div {
+  margin-bottom: 15px;
+}
+
+.more-bio ul {
+  padding-left: 20px;
+}
+
+.more-bio-button:focus {
+  outline: none;
+}
+
+.more-bio-button {
+  background-color: lightgrey !important;
+}
+
 .parts-list {
   padding-left: 15px;
 }
