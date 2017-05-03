@@ -26,7 +26,6 @@ ul.table-of-contents li {
 
 .entry {
   display: flex;
-  overflow: auto;
   margin: 5px 0 5px 0;
 }
 
@@ -34,6 +33,7 @@ ul.table-of-contents li {
   float: left;
   width: 35%;
   overflow: hidden;
+  position: relative;
 }
 
 .entry div.right {
@@ -42,8 +42,10 @@ ul.table-of-contents li {
 }
 
 .entry img {
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
   height: 100%;
-  vertical-align: middle;
 }
 
 .parts-list {
