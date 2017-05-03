@@ -66,8 +66,36 @@ ul.table-of-contents li {
 
 .more-bio-button {
   background-color: lightgrey !important;
+  transition: all 500ms ease;
+}
+
+.more-bio-button:hover {
+  background-color: rgba(0,0,0,0) !important;
+  color: lightgrey !important;
+  box-shadow: inset 0 0 0 3px lightgrey;
 }
 
 .parts-list {
   padding-left: 15px;
+}
+
+a i.fa:hover {
+  animation: bounce 1s;
+}
+
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
 }
