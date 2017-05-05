@@ -15,6 +15,10 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
+.title {
+  animation: fade-in 1s both;
+}
+
 .entry {
   display: flex;
   margin: 5px 0 5px 0;
@@ -40,7 +44,10 @@
 }
 
 .bio {
-  /*animation: wipe-from-right 0.5s;*/
+  animation-name: fade-in, slide-from-right;
+  animation-duration: .8s, .3s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
 }
 
 .more-bio {
@@ -75,14 +82,15 @@
 }
 
 a i.fa.animate-bounce {
-  animation-delay: 1s;
+  animation-delay: 1.2s;
   animation-name: bounce;
   animation-duration: 1s;
 }
 
 .fade {
   animation-name: fade-in, slide-from-bottom;
-  animation-duration: .5s, .5s;
+  animation-duration: .8s, .5s;
+  animation-fill-mode: both;
   animation-timing-function: ease-in;
 }
 
@@ -121,9 +129,13 @@ a i.fa.animate-bounce {
   }
 }
 
-@keyframes wipe-from-right {
-  from {  width: 0%;  }
-  to {  width: 100%; }
+@keyframes slide-from-right {
+  0% {
+    transform: translateX(20%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @keyframes fade-in {
