@@ -91,7 +91,6 @@ a i.fa.animate-bounce {
   animation-name: fade-in, slide-from-bottom;
   animation-duration: .8s, .5s;
   animation-fill-mode: both;
-  animation-timing-function: ease-in;
 }
 
 @keyframes bounce {
