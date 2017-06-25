@@ -92,7 +92,7 @@
   animation-duration: 1.0s, .3s;
   animation-fill-mode: both;
   animation-timing-function: ease-out;
-  animation-delay: 1.0s;
+  animation-delay: 1.2s;
 }
 
 .more-bio {
@@ -141,7 +141,7 @@ a i.fa.animate-bounce {
 .fade-title {
   animation-name: fade-in;
   animation-duration: 1.8s;
-  animation-delay: 0.3s;
+  animation-delay: 0.5s;
   animation-timing-function: ease-out;
   animation-fill-mode: both;
 }
