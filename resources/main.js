@@ -11,7 +11,9 @@
             $(this).html('<b>More <i class="fa fa-arrow-right" aria-hidden="true"></i></b></button>');
         }
     });
+});
 
+$(window).on("load", function() {
     $('#title-banner').ready(function() {
         document.body.classList.remove('js-loading');
     });

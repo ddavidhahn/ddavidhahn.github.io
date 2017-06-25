@@ -95,9 +95,8 @@
 
 .bio {
   animation-name: fade-in;
-  animation-duration: 0.8s;
+  animation-duration: 1.0s;
   animation-fill-mode: both;
-  animation-timing-function: ease-out;
   animation-delay: 1.0s;
 }
 
