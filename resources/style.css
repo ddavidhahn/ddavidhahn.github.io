@@ -15,6 +15,12 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  animation-play-state: paused !important;
+}
+
 .title {
   /*animation: fade-in 1s both;*/
   position: relative;
@@ -89,10 +95,10 @@
 
 .bio {
   animation-name: fade-in;
-  animation-duration: 1.0s, .3s;
+  animation-duration: 0.8s;
   animation-fill-mode: both;
   animation-timing-function: ease-out;
-  animation-delay: 1.2s;
+  animation-delay: 1.0s;
 }
 
 .more-bio {
@@ -127,7 +133,7 @@
 }
 
 a i.fa.animate-bounce {
-  animation-delay: 1.2s;
+  animation-delay: 2.0s;
   animation-name: bounce;
   animation-duration: 1s;
 }
@@ -140,8 +146,8 @@ a i.fa.animate-bounce {
 
 .fade-title {
   animation-name: fade-in;
-  animation-duration: 1.8s;
-  animation-delay: 0.5s;
+  animation-duration: 1.3s;
+  animation-delay: 0.3s;
   animation-timing-function: ease-out;
   animation-fill-mode: both;
 }

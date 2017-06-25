@@ -1,4 +1,6 @@
 ﻿$(document).ready(function() {
+    document.body.classList.add('js-loading');
+
     $('button.more-bio-button').click(function () {
         var $moreBio = $('div.more-bio');
         if ($moreBio.is( ":hidden" )) {
@@ -8,5 +10,9 @@
             $moreBio.slideUp();
             $(this).html('<b>More <i class="fa fa-arrow-right" aria-hidden="true"></i></b></button>');
         }
+    });
+
+    $('#title-banner').ready(function() {
+        document.body.classList.remove('js-loading');
     });
 });
